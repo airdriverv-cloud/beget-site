@@ -3,16 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Привет, мир</title>
+  <title>Цигун — занятия для тела и дыхания</title>
+  <meta name="description" content="Занятия цигун: мягкие движения, дыхание и спокойная практика. Группы для начинающих.">
   <style>
-    body { font-family: system-ui, sans-serif; display: grid; place-items: center; min-height: 100vh; margin: 0; background: #f6f7f9; color: #111; }
-    main { text-align: center; }
+    :root { --ink:#1c1915; --muted:#6d645b; --paper:#f4efe6; --card:#fffdf8; --line:#e4d9c8; --accent:#8a3d2f; --accent-2:#2f5d50; }
+    * { box-sizing: border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:Georgia, "Iowan Old Style", serif; line-height:1.55; }
+    a { color:inherit; }
+    header, main, footer { width:min(1040px, calc(100% - 32px)); margin:0 auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:22px 0; }
+    .mark { font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:14px; font-family:system-ui, sans-serif; }
+    .nav-links { display:flex; gap:18px; font-family:system-ui, sans-serif; font-size:14px; }
+    .nav-links a { text-decoration:none; }
+    .hero { display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:end; padding:28px 0 48px; }
+    h1 { font-size:clamp(42px, 7vw, 78px); line-height:.95; margin:0 0 16px; font-weight:500; }
+    .lead { font-size:20px; max-width:36rem; color:var(--muted); }
+    .cta { display:inline-block; margin-top:22px; background:var(--accent); color:#fff; text-decoration:none; padding:12px 18px; font-family:system-ui, sans-serif; font-size:14px; }
+    .card { background:var(--card); border:1px solid var(--line); padding:22px; }
+    .card strong { display:block; font-family:system-ui, sans-serif; font-size:13px; letter-spacing:.04em; text-transform:uppercase; margin-bottom:8px; }
+    section { padding:18px 0 36px; }
+    h2 { font-size:32px; font-weight:500; margin:0 0 16px; }
+    .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; }
+    .item { background:var(--card); border-top:3px solid var(--accent-2); padding:18px; }
+    .item h3 { margin:0 0 8px; font-size:20px; }
+    .item p, .note { margin:0; color:var(--muted); }
+    table { width:100%; border-collapse:collapse; background:var(--card); font-family:system-ui, sans-serif; font-size:15px; }
+    th, td { text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); }
+    th { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+    form { display:grid; gap:10px; }
+    input, textarea { font:16px system-ui, sans-serif; padding:12px; border:1px solid var(--line); background:#fff; }
+    button { border:0; background:var(--ink); color:#fff; padding:12px; font:14px system-ui, sans-serif; cursor:pointer; }
+    footer { padding:28px 0 40px; color:var(--muted); font-family:system-ui, sans-serif; font-size:13px; }
+    @media (max-width:760px) { .hero, .grid { grid-template-columns:1fr; } .nav-links { display:none; } }
   </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="mark">Цигун</div>
+      <div class="nav-links">
+        <a href="#practice">Практика</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#signup">Запись</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div>
+        <h1>Медленно.<br>Ровно.<br>Своим темпом.</h1>
+        <p class="lead">Групповые занятия цигун для тех, кто хочет мягче двигаться, спокойнее дышать и не гоняться за результатом.</p>
+        <a class="cta" href="#signup">Записаться на пробное</a>
+      </div>
+      <aside class="card">
+        <strong>Первое занятие</strong>
+        <p>60 минут. Без сложных стоек и без спецподготовки. Подойдёт удобная одежда, в которой легко поднимать руки.</p>
+      </aside>
+    </div>
+  </header>
   <main>
-    <h1>Привет, мир</h1>
-    <p>Тестовый проект для публикации на GitHub.</p>
+    <section id="practice">
+      <h2>Что будет на занятии</h2>
+      <div class="grid">
+        <article class="item"><h3>Движение</h3><p>Мягкие формы, которые можно повторить дома. Темп под группу, без сравнения.</p></article>
+        <article class="item"><h3>Дыхание</h3><p>Короткие практики, чтобы заметить дыхание и не зажимать его.</p></article>
+        <article class="item"><h3>Внимание</h3><p>Стоя, сидя или лёжа. Если что-то нельзя — делаем проще, без боли.</p></article>
+      </div>
+    </section>
+    <section id="schedule">
+      <h2>Расписание</h2>
+      <table>
+        <thead><tr><th>День</th><th>Время</th><th>Группа</th><th>Место</th></tr></thead>
+        <tbody>
+          <tr><td>Вторник</td><td>19:00–20:00</td><td>Начинающие</td><td>Зал, адрес уточним</td></tr>
+          <tr><td>Четверг</td><td>10:00–11:00</td><td>Утренняя</td><td>Зал, адрес уточним</td></tr>
+          <tr><td>Суббота</td><td>11:30–12:30</td><td>Открытая</td><td>Парк, если без дождя</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:12px">Цены и адрес — черновик. Заменим на ваши данные.</p>
+    </section>
+    <section id="signup">
+      <h2>Запись на пробное</h2>
+      <form action="mailto:you@example.com" method="post" enctype="text/plain">
+        <input name="name" placeholder="Имя" required>
+        <input name="contact" placeholder="Телефон или Telegram" required>
+        <textarea name="note" rows="4" placeholder="Удобный день и вопрос, если есть"></textarea>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </section>
   </main>
+  <footer>Цигун — учебная страница. Это не медицинская услуга и не заменяет врача.</footer>
 </body>
 </html>
