@@ -1,95 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Цигун — занятия для тела и дыхания</title>
-  <meta name="description" content="Занятия цигун: мягкие движения, дыхание и спокойная практика. Группы для начинающих.">
-  <style>
-    :root { --ink:#1c1915; --muted:#6d645b; --paper:#f4efe6; --card:#fffdf8; --line:#e4d9c8; --accent:#8a3d2f; --accent-2:#2f5d50; }
-    * { box-sizing: border-box; }
-    body { margin:0; color:var(--ink); background:var(--paper); font-family:Georgia, "Iowan Old Style", serif; line-height:1.55; }
-    a { color:inherit; }
-    header, main, footer { width:min(1040px, calc(100% - 32px)); margin:0 auto; }
-    nav { display:flex; justify-content:space-between; align-items:center; padding:22px 0; }
-    .mark { font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:14px; font-family:system-ui, sans-serif; }
-    .nav-links { display:flex; gap:18px; font-family:system-ui, sans-serif; font-size:14px; }
-    .nav-links a { text-decoration:none; }
-    .hero { display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:end; padding:28px 0 48px; }
-    h1 { font-size:clamp(42px, 7vw, 78px); line-height:.95; margin:0 0 16px; font-weight:500; }
-    .lead { font-size:20px; max-width:36rem; color:var(--muted); }
-    .cta { display:inline-block; margin-top:22px; background:var(--accent); color:#fff; text-decoration:none; padding:12px 18px; font-family:system-ui, sans-serif; font-size:14px; }
-    .card { background:var(--card); border:1px solid var(--line); padding:22px; }
-    .card strong { display:block; font-family:system-ui, sans-serif; font-size:13px; letter-spacing:.04em; text-transform:uppercase; margin-bottom:8px; }
-    section { padding:18px 0 36px; }
-    h2 { font-size:32px; font-weight:500; margin:0 0 16px; }
-    .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; }
-    .item { background:var(--card); border-top:3px solid var(--accent-2); padding:18px; }
-    .item h3 { margin:0 0 8px; font-size:20px; }
-    .item p, .note { margin:0; color:var(--muted); }
-    table { width:100%; border-collapse:collapse; background:var(--card); font-family:system-ui, sans-serif; font-size:15px; }
-    th, td { text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); }
-    th { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
-    form { display:grid; gap:10px; }
-    input, textarea { font:16px system-ui, sans-serif; padding:12px; border:1px solid var(--line); background:#fff; }
-    button { border:0; background:var(--ink); color:#fff; padding:12px; font:14px system-ui, sans-serif; cursor:pointer; }
-    footer { padding:28px 0 40px; color:var(--muted); font-family:system-ui, sans-serif; font-size:13px; }
-    @media (max-width:760px) { .hero, .grid { grid-template-columns:1fr; } .nav-links { display:none; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Уроки цигун — схемы упражнений</title>
+<meta name="description" content="Учебные уроки цигун для начинающих: пошаговые схемы стойки, подъёма рук, раскрытия груди и мягкого поворота.">
+<style>
+:root{--ink:#1c1915;--muted:#6a6158;--paper:#f3eee6;--card:#fffdf9;--line:#e3d7c7;--accent:#8a3d2f;--green:#2f5d50}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,serif;line-height:1.55}a{color:inherit}header,main,footer{width:min(980px,calc(100% - 28px));margin:0 auto}nav{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;font-family:system-ui,sans-serif;font-size:14px}.mark{letter-spacing:.08em;text-transform:uppercase;font-weight:700}.links{display:flex;gap:14px;flex-wrap:wrap}.links a{text-decoration:none}h1{font-size:clamp(38px,6vw,64px);line-height:.95;font-weight:500;margin:8px 0 12px}.lead{max-width:40rem;color:var(--muted);font-size:18px}.note{background:#fff7ea;border:1px solid var(--line);padding:12px 14px;font-family:system-ui,sans-serif;font-size:14px}section{padding:8px 0 28px}h2{font-size:30px;font-weight:500;margin:0 0 8px}h3{margin:0 0 8px;font-size:22px}.lesson{background:var(--card);border:1px solid var(--line);padding:18px;margin:14px 0}.meta{font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}.scheme{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}figure{margin:0;background:#f7f3ec;border:1px solid var(--line);padding:8px}figcaption{font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:6px}svg{width:100%;height:auto;display:block}ol{padding-left:20px}li{margin:6px 0}.two{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}footer{padding:10px 0 36px;color:var(--muted);font-family:system-ui,sans-serif;font-size:13px}@media(max-width:760px){.scheme,.two{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="mark">Цигун</div>
-      <div class="nav-links">
-        <a href="#practice">Практика</a>
-        <a href="#schedule">Расписание</a>
-        <a href="#signup">Запись</a>
-      </div>
-    </nav>
-    <div class="hero">
-      <div>
-        <h1>Медленно.<br>Ровно.<br>Своим темпом.</h1>
-        <p class="lead">Групповые занятия цигун для тех, кто хочет мягче двигаться, спокойнее дышать и не гоняться за результатом.</p>
-        <a class="cta" href="#signup">Записаться на пробное</a>
-      </div>
-      <aside class="card">
-        <strong>Первое занятие</strong>
-        <p>60 минут. Без сложных стоек и без спецподготовки. Подойдёт удобная одежда, в которой легко поднимать руки.</p>
-      </aside>
-    </div>
-  </header>
-  <main>
-    <section id="practice">
-      <h2>Что будет на занятии</h2>
-      <div class="grid">
-        <article class="item"><h3>Движение</h3><p>Мягкие формы, которые можно повторить дома. Темп под группу, без сравнения.</p></article>
-        <article class="item"><h3>Дыхание</h3><p>Короткие практики, чтобы заметить дыхание и не зажимать его.</p></article>
-        <article class="item"><h3>Внимание</h3><p>Стоя, сидя или лёжа. Если что-то нельзя — делаем проще, без боли.</p></article>
-      </div>
-    </section>
-    <section id="schedule">
-      <h2>Расписание</h2>
-      <table>
-        <thead><tr><th>День</th><th>Время</th><th>Группа</th><th>Место</th></tr></thead>
-        <tbody>
-          <tr><td>Вторник</td><td>19:00–20:00</td><td>Начинающие</td><td>Зал, адрес уточним</td></tr>
-          <tr><td>Четверг</td><td>10:00–11:00</td><td>Утренняя</td><td>Зал, адрес уточним</td></tr>
-          <tr><td>Суббота</td><td>11:30–12:30</td><td>Открытая</td><td>Парк, если без дождя</td></tr>
-        </tbody>
-      </table>
-      <p class="note" style="margin-top:12px">Цены и адрес — черновик. Заменим на ваши данные.</p>
-    </section>
-    <section id="signup">
-      <h2>Запись на пробное</h2>
-      <form action="mailto:you@example.com" method="post" enctype="text/plain">
-        <input name="name" placeholder="Имя" required>
-        <input name="contact" placeholder="Телефон или Telegram" required>
-        <textarea name="note" rows="4" placeholder="Удобный день и вопрос, если есть"></textarea>
-        <button type="submit">Отправить заявку</button>
-      </form>
-    </section>
-  </main>
-  <footer>Цигун — учебная страница. Это не медицинская услуга и не заменяет врача.</footer>
+<header>
+<nav><div class="mark">Уроки цигун</div><div class="links"><a href="#stand">Стойка</a><a href="#arms">Руки</a><a href="#open">Грудь</a><a href="#turn">Поворот</a></div></nav>
+<h1>Четыре упражнения, которые можно разобрать по схеме.</h1>
+<p class="lead">Учебный урок для начинающих: стойка, подъём рук, раскрытие груди и мягкий поворот. Это упрощённая практика, не школа и не лечение.</p>
+<p class="note">Двигайтесь без боли. Колени мягкие, не запертые. Если кружится голова или тяжело дышать — остановитесь и сядьте. При травмах и болезнях сначала спросите врача.</p>
+</header>
+<main>
+<section id="stand" class="lesson">
+<p class="meta">Урок 1 · 3–5 минут</p>
+<h2>Стойка «пустота»</h2>
+<p>Основа всех следующих движений. Ноги на ширине плеч, вес посередине стоп, макушка тянется вверх без напряжения шеи.</p>
+<div class="scheme">
+<figure><svg viewBox="0 0 160 180" aria-label="Вид спереди: стопы на ширине плеч"><rect width="160" height="180" fill="#f7f3ec"/><circle cx="80" cy="28" r="10" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="38" x2="80" y2="92" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="52" x2="52" y2="78" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="52" x2="108" y2="78" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="92" x2="58" y2="132" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="92" x2="102" y2="132" stroke="#1c1915" stroke-width="2"/><line x1="58" y1="132" x2="48" y2="156" stroke="#1c1915" stroke-width="2"/><line x1="102" y1="132" x2="112" y2="156" stroke="#1c1915" stroke-width="2"/><ellipse cx="42" cy="162" rx="14" ry="5" fill="none" stroke="#2f5d50" stroke-width="2"/><ellipse cx="118" cy="162" rx="14" ry="5" fill="none" stroke="#2f5d50" stroke-width="2"/><text x="80" y="174" text-anchor="middle" font-size="9" fill="#6a6158">ширина плеч</text></svg><figcaption>1. Стопы параллельно, не носками внутрь.</figcaption></figure>
+<figure><svg viewBox="0 0 160 180" aria-label="Вид сбоку: колени мягкие"><rect width="160" height="180" fill="#f7f3ec"/><circle cx="78" cy="28" r="10" fill="none" stroke="#1c1915" stroke-width="2"/><path d="M78 38 C82 58 74 70 78 92" fill="none" stroke="#1c1915" stroke-width="2"/><path d="M78 92 C70 112 86 128 80 156" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="156" x2="104" y2="162" stroke="#2f5d50" stroke-width="3"/><circle cx="86" cy="128" r="3" fill="#8a3d2f"/><text x="96" y="124" font-size="9" fill="#8a3d2f">колено</text><text x="80" y="174" text-anchor="middle" font-size="9" fill="#6a6158">чуть согнуто</text></svg><figcaption>2. Колено над стопой, не уходит вперёд за носок.</figcaption></figure>
+<figure><svg viewBox="0 0 160 180" aria-label="Вес на середине стопы"><rect width="160" height="180" fill="#f7f3ec"/><ellipse cx="80" cy="150" rx="36" ry="12" fill="none" stroke="#1c1915" stroke-width="2"/><circle cx="80" cy="150" r="5" fill="#8a3d2f"/><path d="M80 138 V40" stroke="#2f5d50" stroke-width="2" stroke-dasharray="3 3"/><circle cx="80" cy="28" r="10" fill="none" stroke="#1c1915" stroke-width="2"/><text x="80" y="174" text-anchor="middle" font-size="9" fill="#6a6158">вес в центре</text></svg><figcaption>3. Не заваливайтесь на пятки и не вставайте на носки.</figcaption></figure>
+</div>
+<ol><li>Поставьте стопы на ширине плеч, внешние края почти параллельны.</li><li>Слегка согните колени, будто садитесь на высокий стул на один сантиметр.</li><li>Расслабьте плечи вниз, подбородок чуть подберите, взгляд вперёд.</li><li>Дышите носом. Вдох и выдох длиннее обычного, без задержки.</li></ol>
+</section>
+<section id="arms" class="lesson">
+<p class="meta">Урок 2 · 8 повторов</p>
+<h2>Подъём и опускание рук</h2>
+<p>Руки поднимаются перед телом на вдохе и опускаются по бокам на выдохе. Локти не выпрямляйте до щелчка.</p>
+<div class="scheme">
+<figure><svg viewBox="0 0 160 180"><rect width="160" height="180" fill="#f7f3ec"/><circle cx="80" cy="26" r="9" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="35" x2="80" y2="90" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="50" x2="58" y2="78" stroke="#8a3d2f" stroke-width="2"/><line x1="80" y1="50" x2="102" y2="78" stroke="#8a3d2f" stroke-width="2"/><line x1="80" y1="90" x2="62" y2="140" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="90" x2="98" y2="140" stroke="#1c1915" stroke-width="2"/><text x="80" y="168" text-anchor="middle" font-size="9" fill="#6a6158">старт, вдох</text></svg><figcaption>1. Ладони перед бёдрами, пальцы свободно.</figcaption></figure>
+<figure><svg viewBox="0 0 160 180"><rect width="160" height="180" fill="#f7f3ec"/><circle cx="80" cy="26" r="9" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="35" x2="80" y2="90" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="50" x2="48" y2="42" stroke="#8a3d2f" stroke-width="2"/><line x1="80" y1="50" x2="112" y2="42" stroke="#8a3d2f" stroke-width="2"/><line x1="80" y1="90" x2="62" y2="140" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="90" x2="98" y2="140" stroke="#1c1915" stroke-width="2"/><text x="80" y="168" text-anchor="middle" font-size="9" fill="#6a6158">руки до плеч</text></svg><figcaption>2. Поднимите руки вперёд-вверх до уровня плеч.</figcaption></figure>
+<figure><svg viewBox="0 0 160 180"><rect width="160" height="180" fill="#f7f3ec"/><circle cx="80" cy="26" r="9" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="35" x2="80" y2="90" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="50" x2="46" y2="86" stroke="#2f5d50" stroke-width="2"/><line x1="80" y1="50" x2="114" y2="86" stroke="#2f5d50" stroke-width="2"/><line x1="80" y1="90" x2="62" y2="140" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="90" x2="98" y2="140" stroke="#1c1915" stroke-width="2"/><text x="80" y="168" text-anchor="middle" font-size="9" fill="#6a6158">выдох, вниз</text></svg><figcaption>3. Опустите руки по широкой дуге к бёдрам.</figcaption></figure>
+</div>
+<ol><li>Вдох: руки плывут вперёд, ладони смотрят друг на друга.</li><li>На уровне плеч остановитесь на секунду, плечи не поднимайте к ушам.</li><li>Выдох: разведите руки в стороны и опустите вниз.</li><li>Повторите 8 раз. Движение медленнее, чем хочется.</li></ol>
+</section>
+<section id="open" class="lesson">
+<p class="meta">Урок 3 · 6 повторов</p>
+<h2>Раскрытие груди</h2>
+<div class="two">
+<div>
+<ol><li>Сложите ладони перед грудью, локти в стороны, не прижимайте их к рёбрам.</li><li>Вдох: разведите ладони в стороны, будто открываете створки. Грудь широкая, поясница не прогибается.</li><li>Выдох: верните ладони к центру, не хлопая ими.</li><li>Плечи остаются внизу на всём движении.</li></ol>
+</div>
+<figure><svg viewBox="0 0 220 180"><rect width="220" height="180" fill="#f7f3ec"/><circle cx="110" cy="30" r="10" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="110" y1="40" x2="110" y2="100" stroke="#1c1915" stroke-width="2"/><line x1="110" y1="58" x2="78" y2="78" stroke="#1c1915" stroke-width="2"/><line x1="110" y1="58" x2="142" y2="78" stroke="#1c1915" stroke-width="2"/><line x1="78" y1="78" x2="70" y2="70" stroke="#8a3d2f" stroke-width="2"/><line x1="142" y1="78" x2="150" y2="70" stroke="#8a3d2f" stroke-width="2"/><path d="M70 70 H150" stroke="#2f5d50" stroke-width="1.5" stroke-dasharray="4 3"/><text x="110" y="168" text-anchor="middle" font-size="11" fill="#6a6158">ладони расходятся по горизонтали</text></svg><figcaption>Стрелка показывает путь ладоней, не рывок плечами.</figcaption></figure>
+</div>
+</section>
+<section id="turn" class="lesson">
+<p class="meta">Урок 4 · 6 повторов в каждую сторону</p>
+<h2>Мягкий поворот корпуса</h2>
+<div class="scheme">
+<figure><svg viewBox="0 0 160 180"><rect width="160" height="180" fill="#f7f3ec"/><ellipse cx="80" cy="150" rx="28" ry="8" fill="none" stroke="#2f5d50" stroke-width="2"/><circle cx="80" cy="28" r="9" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="80" y1="37" x2="80" y2="96" stroke="#1c1915" stroke-width="2"/><line x1="62" y1="58" x2="98" y2="58" stroke="#8a3d2f" stroke-width="2"/><text x="80" y="172" text-anchor="middle" font-size="9" fill="#6a6158">центр</text></svg><figcaption>1. Стопы остаются на месте.</figcaption></figure>
+<figure><svg viewBox="0 0 160 180"><rect width="160" height="180" fill="#f7f3ec"/><ellipse cx="80" cy="150" rx="28" ry="8" fill="none" stroke="#2f5d50" stroke-width="2"/><circle cx="92" cy="30" r="9" fill="none" stroke="#1c1915" stroke-width="2"/><path d="M84 40 C96 60 96 78 88 98" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="78" y1="58" x2="112" y2="50" stroke="#8a3d2f" stroke-width="2"/><text x="80" y="172" text-anchor="middle" font-size="9" fill="#6a6158">поворот вправо</text></svg><figcaption>2. Поворачивается грудь, таз почти неподвижен.</figcaption></figure>
+<figure><svg viewBox="0 0 160 180"><rect width="160" height="180" fill="#f7f3ec"/><ellipse cx="80" cy="150" rx="28" ry="8" fill="none" stroke="#2f5d50" stroke-width="2"/><circle cx="68" cy="30" r="9" fill="none" stroke="#1c1915" stroke-width="2"/><path d="M76 40 C64 60 64 78 72 98" fill="none" stroke="#1c1915" stroke-width="2"/><line x1="48" y1="50" x2="82" y2="58" stroke="#8a3d2f" stroke-width="2"/><text x="80" y="172" text-anchor="middle" font-size="9" fill="#6a6158">поворот влево</text></svg><figcaption>3. Взгляд следует за поворотом, шея не ломается.</figcaption></figure>
+</div>
+<ol><li>Руки держите перед собой на уровне груди, как будто обнимаете шар.</li><li>Выдох: повернитесь вправо до комфортной границы. Колени остаются над стопами.</li><li>Вдох: вернитесь в центр. Затем то же влево.</li><li>Не докручивайте поясницу. Амплитуда маленькая лучше, чем резкая.</li></ol>
+</section>
+<section class="lesson">
+<h2>Как собрать урок</h2>
+<ol><li>Стойка 2 минуты.</li><li>Подъём рук, 8 повторов.</li><li>Раскрытие груди, 6 повторов.</li><li>Повороты, по 6 в каждую сторону.</li><li>Снова стойка 1 минуту и обычный шаг.</li></ol>
+<p>Схемы схематичные: они показывают направление, а не точную традиционную форму. Для точной школы нужен преподаватель в зале.</p>
+</section>
+</main>
+<footer>Учебная страница. Не медицинская рекомендация.</footer>
 </body>
 </html>
